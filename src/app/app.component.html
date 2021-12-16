@@ -472,6 +472,31 @@
   </svg>
 
 </div>
+<h2>Example 1</h2>
+     <h1 [innerText]="title2"></h1>
+     
+
+     <button (click)="clickMe()">Click Me</button>
+     <h4>You have clicked {{ clickCount }}</h4>
+     
+     <h2>Example 2</h2>
+     <h1 [innerText]="title3"></h1>
+
+     <button (click)="clickMe2(); clickCount2=clickCount3">Click Me</button>
+     <h4>You have clicked {{ clickCount3 }}</h4>
+     <h4>Second Click {{ clickCount2 }}</h4>
+ 
+     <h2>Example 3</h2>
+     <h1 [innerText]="title4"></h1>
+     
+     <input (keyup)="handleInput($event)" />
+     <h4>You have typed {{ value }}</h4>
+    
+     <h2>Example 3</h2>
+     <h1 [innerText]="title5"></h1>
+
+     <input #el (input)="handleInput1(el)">
+     <p>You have entered {{val}}</p>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
