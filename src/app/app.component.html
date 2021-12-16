@@ -497,6 +497,13 @@
 
      <input #el (input)="handleInput1(el)">
      <p>You have entered {{val}}</p>
+     
+     <h1 [innerText]="title6"></h1>
+     <h2>Example 1</h2>
+
+     <input type="text" [value]="name" (input)="name=$any($event.target).value">
+     <p>You entered name {{ name }}</p>
+     <button (click)="clearName()">Clear</button>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
