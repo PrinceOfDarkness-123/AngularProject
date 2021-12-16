@@ -505,6 +505,12 @@
      <p>You entered name {{ name }}</p>
      <button (click)="clearName()">Clear</button>
 
+     <h2>Example 2</h2>
+     <h1 [innerText]="title7"></h1>
+     <input type="text" name="val3" [(ngModel)]="val3">
+<p> You entered {{val3}}</p>
+<button (click)="clearValue()">Clear</button>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
