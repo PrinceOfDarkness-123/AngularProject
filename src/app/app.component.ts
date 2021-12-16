@@ -35,5 +35,10 @@ this.val = element.value;
   clearName(){
     this.name="";
   }
+  
+  val3="";
+  clearValue(){
+    this.val3="";
+  }
 
 }
